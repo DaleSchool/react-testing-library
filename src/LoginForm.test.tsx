@@ -1,9 +1,6 @@
-import "@testing-library/jest-dom/vitest";
-import { cleanup, render, screen, fireEvent } from "@testing-library/react";
-import { afterEach, expect, test, vitest } from "vitest";
+import { render, screen, fireEvent } from "@testing-library/react";
+import { expect, test, vitest } from "vitest";
 import { LoginForm } from "./LoginForm";
-
-afterEach(cleanup);
 
 test("enables button when both email and passwords are entered", () => {
   render(<LoginForm onSubmit={() => null} />);

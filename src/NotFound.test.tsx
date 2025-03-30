@@ -1,9 +1,6 @@
-import "@testing-library/jest-dom/vitest";
-import { cleanup, render, screen } from "@testing-library/react";
-import { afterEach, expect, test } from "vitest";
+import { render, screen } from "@testing-library/react";
+import { expect, test } from "vitest";
 import { NotFound } from "./NotFound";
-
-afterEach(cleanup);
 
 test("renders header", () => {
   render(<NotFound path="/abc" />);
